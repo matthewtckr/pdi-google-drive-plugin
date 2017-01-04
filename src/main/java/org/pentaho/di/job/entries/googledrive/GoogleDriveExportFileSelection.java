@@ -23,6 +23,7 @@
 package org.pentaho.di.job.entries.googledrive;
 
 import org.pentaho.di.core.Const;
+import org.pentaho.di.core.util.Utils;
 
 public class GoogleDriveExportFileSelection {
 
@@ -74,7 +75,7 @@ public class GoogleDriveExportFileSelection {
   String getFinalQueryOptions() {
     StringBuilder retval = new StringBuilder();
     retval.append( "mimeType = '" + getFileType().getMimeType() + "'" );
-    if ( !Const.isEmpty( Const.trim( getQueryOptions() ) ) ) {
+    if ( !Utils.isEmpty( Const.trim( getQueryOptions() ) ) ) {
       retval.append( " and ( " ).append( getQueryOptions() ).append( " )" );
     }
     return retval.toString();
