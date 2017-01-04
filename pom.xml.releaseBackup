@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.pentaho</groupId>
     <artifactId>pentaho-ce-jar-parent-pom</artifactId>
-    <version>1.2.8</version>
+    <version>1.2.6</version>
   </parent>
 
   <groupId>pentaho-kettle</groupId>
@@ -14,29 +14,10 @@
   <name>PDI Google Drive Plugin</name>
   <description>A set of PDI Job Entries that interact with files in Google Drive.</description>
 
-  <scm>
-    <connection>scm:git:git://github.com/matthewtckr/pdi-zendesk-plugin.git</connection>
-    <url>http://github.com/matthewtckr/pdi-google-drive-plugin/tree/master</url>
-  </scm>
-
-  <developers>
-    <developer>
-      <name>Matt Tucker</name>
-    </developer>
-  </developers>
-
-  <repositories>
-    <repository>
-      <id>Pentaho Artifactory</id>
-      <url>http://nexus.pentaho.org/content/groups/omni</url>
-    </repository>
-  </repositories>
-
   <properties>
   	<kettle.version>7.0.0.0-25</kettle.version>
   	<dependency.google-oauth-client-jetty.version>1.22.0</dependency.google-oauth-client-jetty.version>
   	<dependency.google-api-services-drive.version>v3-rev52-1.22.0</dependency.google-api-services-drive.version>
-  	<jacoco-maven-plugin.version>0.7.8</jacoco-maven-plugin.version> <!-- Temp Fix for parent POM -->
   </properties>
 
   <dependencies>
@@ -115,6 +96,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <distributionManagement/>
 </project>
