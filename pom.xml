@@ -34,7 +34,7 @@
 
   <properties>
   	<kettle.version>7.0.0.0-25</kettle.version>
-  	<dependency.google-oauth-client-jetty.version>1.22.0</dependency.google-oauth-client-jetty.version>
+  	<dependency.google-oauth-client-jetty.version>1.30.4</dependency.google-oauth-client-jetty.version>
   	<dependency.google-api-services-drive.version>v3-rev52-1.22.0</dependency.google-api-services-drive.version>
   	<jacoco-maven-plugin.version>0.7.8</jacoco-maven-plugin.version> <!-- Temp Fix for parent POM -->
   </properties>
